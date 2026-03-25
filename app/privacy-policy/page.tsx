@@ -14,9 +14,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
 
-         <p className="text-[#6A6F76] mb-10">
-  Last updated: March 2026
-</p>
+          <p className="text-[#6A6F76] mb-10">Last updated: March 2026</p>
 
           <p className="mb-6 text-lg leading-relaxed text-[#AEAEAF]">
             At <span className="font-semibold">DryDash</span>, we value your
@@ -31,7 +29,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-semibold mb-2">
                 1. Information We Collect
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 We may collect your name, phone number, address, and payment
                 details to provide pickup, cleaning, and delivery services. We
                 also collect app usage data to improve your experience.
@@ -42,7 +40,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-semibold mb-2">
                 2. How We Use Your Information
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 Your data is used to process orders, provide real-time tracking,
                 send notifications, and improve our services. We do not sell
                 your personal information.
@@ -53,18 +51,35 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-semibold mb-2">
                 3. Payments & Security
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 All payments are processed securely via trusted payment
                 gateways. We implement industry-standard measures to protect
                 your data.
               </p>
             </section>
-
+            <section>
+              <h2 className="text-xl font-semibold mb-2">Location Data</h2>
+              <p className="text-[#AEAEAF] leading-relaxed">
+                DryDash may collect and use your device location (with your
+                permission) to provide accurate pickup and delivery services.
+                This helps us assign nearby service partners, estimate delivery
+                time, and improve your overall experience.
+                <br />
+                <br />
+                We do not track your location continuously. Location access is
+                only used when required for order placement, pickup, or delivery
+                tracking.
+                <br />
+                <br />
+                You can enable or disable location permissions anytime through
+                your device settings.
+              </p>
+            </section>
             <section>
               <h2 className="text-xl font-semibold mb-2">
                 4. Third-Party Services
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 We may use third-party services for payments, analytics, and
                 notifications. These providers follow strict data protection
                 standards.
@@ -73,7 +88,7 @@ export default function PrivacyPolicy() {
 
             <section>
               <h2 className="text-xl font-semibold mb-2">5. Your Rights</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 You can request access, correction, or deletion of your personal
                 data anytime by contacting our support team.
               </p>
@@ -81,7 +96,7 @@ export default function PrivacyPolicy() {
 
             <section>
               <h2 className="text-xl font-semibold mb-2">6. Contact Us</h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-[#AEAEAF] leading-relaxed">
                 If you have any questions, reach out at:
                 <br />
                 <span className="font-medium">support@drydash.in</span>
@@ -165,7 +180,7 @@ const Footer = () => {
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-//   const navRef = useRef(null);
+  //   const navRef = useRef(null);
 
   const navItems = [
     { name: "Services", href: "#services" },
@@ -177,7 +192,7 @@ const Navigation = () => {
 
   return (
     <nav
-    //   ref={navRef}
+      //   ref={navRef}
       className="fixed w-full z-50 top-0 transition-all duration-300 bg-[#0A121B]/90 backdrop-blur-xl border-b border-[#03AE96]/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
