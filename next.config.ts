@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",   // 🔥 This enables `out/` folder
+  // output: "export",
+  trailingSlash: true,
   images: {
-    unoptimized: true // required for static export
-  }
-}
+    unoptimized: true,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -165,7 +165,7 @@ const Footer = () => {
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navRef = useRef(null);
+//   const navRef = useRef(null);
 
   const navItems = [
     { name: "Services", href: "#services" },
@@ -177,7 +177,7 @@ const Navigation = () => {
 
   return (
     <nav
-      ref={navRef}
+    //   ref={navRef}
       className="fixed w-full z-50 top-0 transition-all duration-300 bg-[#0A121B]/90 backdrop-blur-xl border-b border-[#03AE96]/10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
