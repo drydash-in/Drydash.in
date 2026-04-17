@@ -30,7 +30,6 @@ jobs:
       - name: Build Next.js App
         run: |
           npm run build
-          npm run export
 
       - name: Deploy to S3
         run: aws s3 sync out/ s3://drydash.in --delete
