@@ -17,11 +17,11 @@ const TermsAndConditionsPage = () => {
                     }}
                 >
                     <div className="flex flex-col md:items-center md:justify-center justify-start text-left md:text-center mt-20 mb-16 ">
-                        <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight font-didot">
+                        <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
                             Terms & Conditions
                         </h1>
-                        <p className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-white/60">
-                            OWNED AND OPERATED BY GYLD SOLUTIONS PRIVATE LIMITED
+                        <p className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-white/60">
+                            Owned and operated by Gyld Solutions Private Limited
                         </p>
                     </div>
                 </InView>

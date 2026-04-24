@@ -141,10 +141,10 @@ const DryCleaningPage = () => {
                         {/* Title */}
                         <h1
                             ref={heroTitleRef}
-                            className="text-4xl md:text-6xl 2xl:text-[90px] font-normal leading-[1.1] mb-8 tracking-tight font-didot"
+                            className="text-4xl md:text-6xl 2xl:text-[90px] font-normal leading-[1.1] mb-8 tracking-tight"
                         >
                             Premium Cleaning Services<br />
-                            <span className="text-[#03D391] italic font-serif">Across Delhi</span>
+                            <span className="text-[#03D391] italic ">Across Delhi</span>
                         </h1>
 
                         {/* Subtitle */}

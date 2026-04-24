@@ -55,7 +55,7 @@ const ServicesPage = () => {
                     }}
                 >
                     <div className="flex flex-col md:items-center md:justify-center justify-start text-left md:text-center mb-16 gap-4">
-                        <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-black tracking-tight font-didot">
+                        <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-black tracking-tight ">
                             Our Services
                         </h1>
                         <p className="text-sm md:text-base text-[#8a928e] max-w-2xl mx-auto leading-relaxed">
@@ -118,7 +118,7 @@ const ServicesPage = () => {
                         <div className="absolute inset-0 bg-linear-to-br from-[#03D391]/5 via-transparent to-transparent pointer-events-none" />
 
                         <div className="relative z-10 space-y-8">
-                            <h2 className="text-3xl md:text-5xl font-black leading-tight tracking-tight max-w-2xl mx-auto font-didot">
+                            <h2 className="text-3xl md:text-5xl font-black leading-tight tracking-tight max-w-2xl mx-auto">
                                 Ready for a curated experience?
                             </h2>
                             <p className="text-[14px] md:text-base text-[#8a928e] max-w-xl mx-auto leading-relaxed">

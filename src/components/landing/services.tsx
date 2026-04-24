@@ -218,7 +218,7 @@ const Services = () => {
                                 className="w-full md:w-1/2"
                             >
                                 <p className="text-lg tracking-wide mb-6 text-gray-400">/ Service we offers</p>
-                                <h2 className="2xl:text-7xl font-didot md:text-6xl/normal text-5xl/normal font-normal leading-[1.05] text-white tracking-wide">
+                                <h2 className="2xl:text-7xl md:text-6xl/normal text-5xl/normal font-normal leading-[1.05] text-white tracking-wide">
                                     Swift<br /><TypewriterText words={cursorText} />
                                 </h2>
                             </motion.div>

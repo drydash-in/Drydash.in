@@ -66,7 +66,7 @@ const BlogsPage = () => {
                         }}
                     >
                         <div className="flex flex-col items-center justify-center text-center mb-16">
-                            <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight font-didot">
+                            <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight ">
                                 Blogs
                             </h1>
                         </div>

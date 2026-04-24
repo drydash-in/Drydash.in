@@ -38,7 +38,7 @@ const ContactPage = () => {
                                 className="w-full lg:w-[45%] flex flex-col pt-4 lg:pt-10"
                             >
                                 <div className="space-y-6">
-                                    <h1 className="text-4xl md:text-6xl 2xl:text-7xl font-black uppercase text-white font-didot">
+                                    <h1 className="text-4xl md:text-6xl 2xl:text-7xl font-black uppercase text-white">
                                         Let’s Talk
                                     </h1>
                                     {/* Feature Checklist */}

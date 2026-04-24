@@ -68,7 +68,7 @@ const Downloadwall = () => {
 
                 {/* Left Side Content */}
                 <div className="flex flex-col z-20 w-full lg:w-[55%] mb-10 lg:mb-0">
-                    <h2 className="md:text-4xl text-2xl 2xl:text-5xl font-black text-[#001714] leading-[1.1] mb-6 tracking-tight font-didot">
+                    <h2 className="md:text-4xl text-2xl 2xl:text-5xl font-black text-[#001714] leading-[1.1] mb-6 tracking-tight ">
                         Clean Clothes. Zero Hassle.<br />DryDash
                     </h2>
                     <p className="text-[#152B28]/85 text-[15px] 2xl:text-[16px] leading-[1.6] mb-10 max-w-[500px]">

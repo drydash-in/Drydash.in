@@ -70,7 +70,7 @@ const AboutUsPage = () => {
                     }}
                 >
                     <div className="flex flex-col md:items-center md:justify-center justify-start text-left md:text-center mt-20 mb-16 ">
-                        <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight font-didot">
+                        <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">
                             About DryDash
                         </h1>
                         <p className="text-[10px] md:text-xs font-bold  tracking-[0.2em] text-white/60">
@@ -250,7 +250,7 @@ const AboutUsPage = () => {
                         }}
                     >
                         <div className="mt-32 pt-24 border-t border-white/5 text-center flex flex-col items-center">
-                            <h3 className="text-3xl md:text-5xl font-black mb-10 leading-tight font-didot">
+                            <h3 className="text-3xl md:text-5xl font-black mb-10 leading-tight">
                                 Freshness, Care & Confidence — Delivered
                             </h3>
                             <p className="text-sm text-[#8a928e] mb-12 max-w-lg">

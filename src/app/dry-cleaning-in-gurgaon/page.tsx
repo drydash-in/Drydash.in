@@ -189,7 +189,7 @@ const DryCleaningPage = () => {
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                             }}
                         >
-                            <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-normal text-[#E2DEC6] mb-6 tracking-tight font-didot">
+                            <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-normal text-[#E2DEC6] mb-6 tracking-tight">
                                 Expert Care for Every Fabric
                             </h2>
                             <p className="text-[#8a928e] text-[16px] 2xl:text-[18px] max-w-xl">

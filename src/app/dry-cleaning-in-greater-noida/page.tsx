@@ -141,10 +141,10 @@ const DryCleaningPage = () => {
                         {/* Title */}
                         <h1
                             ref={heroTitleRef}
-                            className="text-4xl md:text-6xl 2xl:text-[90px] font-normal leading-[1.1] mb-8 tracking-tight font-didot"
+                            className="text-4xl md:text-6xl 2xl:text-[90px] font-normal leading-[1.1] mb-8 tracking-tight"
                         >
                             Premium Cleaning Services<br />
-                            <span className="text-[#03D391] italic font-serif">Across Greater Noida</span>
+                            <span className="text-[#03D391] italic">Across Greater Noida</span>
                         </h1>
 
                         {/* Subtitle */}
@@ -345,7 +345,7 @@ const DryCleaningPage = () => {
                                 visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } }
                             }}
                         >
-                            <h2 className="text-4xl md:text-5xl font-black text-black mb-8 tracking-tight max-w-3xl leading-[1.05] relative z-20 font-didot">
+                            <h2 className="text-4xl md:text-5xl font-black text-black mb-8 tracking-tight max-w-3xl leading-[1.05] relative z-20">
                                 Experience Effortless Cleaning Today
                             </h2>
                             <p className="text-black/70 text-[16px] md:text-[18px] mb-12 2xl:max-w-xl max-w-md text-center mx-auto font-medium relative z-20">

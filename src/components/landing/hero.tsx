@@ -113,7 +113,7 @@ const Hero = () => {
                 <div className='2xl:mt-15 mt-0 overflow-hidden'>
                     <div className='flex items-center justify-center'>
                         <div className='2xl:w-2/3 w-180 text-center mb-6'>
-                            <h1 className='2xl:text-7xl/normal md:text-5xl/normal text-4xl/normal tracking-[1.6%] md:font-bold font-normal font-didot will-change-transform'>
+                            <h1 className='2xl:text-7xl/normal md:text-5xl/normal text-4xl/normal tracking-[1.6%] md:font-bold font-normal  will-change-transform'>
                                 Restored By Morning
                                 {/* <span className="heroLoop inline-grid items-center justify-items-start text-left text-[#03D391]">
                                     {loopWords.map((word, index) => (
@@ -126,7 +126,7 @@ const Hero = () => {
                                     </TextLoop>
                                 </span> */}
                             </h1>
-                            <h1 className='2xl:text-xl/normal md:text-xl/normal text-xl/normal tracking-[1.6%] will-change-transform text-[#c0c0c0]'>overnight garment and shoe care</h1>
+                            <p className='2xl:text-xl/normal md:text-xl/normal text-xl/normal tracking-[1.6%] will-change-transform text-[#c0c0c0]'>overnight garment and shoe care</p>
 
                         </div>
                     </div>

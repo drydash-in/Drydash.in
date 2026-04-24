@@ -54,7 +54,7 @@ const PrivacyPolicyPage = () => {
                     }}
                 >
                     <div className="flex flex-col md:items-center md:justify-center justify-start text-left md:text-center mb-16 gap-4">
-                        <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-black tracking-tight font-didot">
+                        <h1 className="text-4xl md:text-5xl 2xl:text-6xl font-black tracking-tight">
                             Privacy Policy
                         </h1>
                         <p className="text-sm md:text-md text-[#8a928e] font-medium">

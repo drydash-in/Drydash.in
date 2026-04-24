@@ -74,7 +74,7 @@ const Faq = () => {
                             className="w-full lg:w-[40%] shrink-0 flex flex-col justify-between lg:sticky lg:top-24"
                         >
                             <div>
-                                <h2 className="text-4xl lg:text-5xl 2xl:text-[56px] font-medium text-white leading-tight mb-8 font-didot">
+                                <h2 className="text-4xl lg:text-5xl 2xl:text-[56px] font-medium text-white leading-tight mb-8 ">
                                     Get all your questions<br />
                                     answered here
                                 </h2>
