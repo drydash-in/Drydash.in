@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mulish } from "next/font/google";
 import Navbar from "@/components/common/navbar";
 import localFont from "next/font/local";
 import Footer from '@/components/common/footer'
@@ -23,6 +23,38 @@ const halfre = localFont({
   variable: "--font-halfre",
 })
 
+const franie = localFont({
+  src: [
+    {
+      path: "../../public/Assests/Fonts/Franie-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/Assests/Fonts/Franie-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/Assests/Fonts/Franie-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/Assests/Fonts/Franie-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-franie",
+})
+
+const mulish = Mulish({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: "--font-mulish",
+})
+
 
 export const metadata: Metadata = {
   title: "Drydash",
@@ -37,7 +69,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning
       lang="en"
-      className={cn("antialiased", helveticaNeue.variable, didot.variable, halfre.variable, "font-sans")}
+      className={cn("antialiased", helveticaNeue.variable, didot.variable, halfre.variable, franie.variable, mulish.className, "font-sans")}
     >
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <ReactLenis root options={{ autoResize: true }}>

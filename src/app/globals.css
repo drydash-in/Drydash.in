@@ -7,11 +7,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-didot: var(--font-didot);
   --font-halfre: var(--font-halfre);
-  --font-heading: var(--font-sans);
+  --font-franie: var(--font-franie);
+  --font-mulish: var(--font-mulish);
+
+  --font-heading: var(--font-franie);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -51,13 +56,13 @@
 }
 
 :root {
-  --background: oklch(0% 0 0);
-  --foreground: oklch(99.557% 0.0021 14.222);
+  --background: oklch(100% 0 0);
+  --foreground: oklch(18.4% 0.033 183.9);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.7662 0.1682 161.81);
+  --primary: oklch(48.9% 0.153 145.2);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.8606 0.1731 91.94);
   --secondary-foreground: oklch(0.205 0 0);
@@ -86,8 +91,8 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: oklch(100% 0 0);
+  --foreground: oklch(18.4% 0.033 183.9);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
@@ -119,6 +124,179 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+@utility squircle {
+  border-radius: 24px;
+  corner-shape: squircle;
+}
+
+@utility squircle-sm {
+  border-radius: 36px;
+  corner-shape: squircle;
+}
+
+@utility squircle-md {
+  border-radius: 48px;
+  corner-shape: squircle;
+}
+
+@utility squircle-lg {
+  border-radius: 64px;
+  corner-shape: squircle;
+}
+
+.squircle {
+  border-radius: 24px;
+  corner-shape: squircle;
+}
+
+.squircle-sm {
+  border-radius: 36px;
+  corner-shape: squircle;
+}
+
+.squircle-md {
+  border-radius: 48px;
+  corner-shape: squircle;
+}
+
+.squircle-lg {
+  border-radius: 64px;
+  corner-shape: squircle;
+}
+
+/* ========================================
+   DryDash Typography System
+======================================== */
+
+@layer utilities {
+
+  /* ---------- H1 ---------- */
+
+  .text-h1 {
+    font-family: var(--font-franie);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 134%;
+    letter-spacing: 0;
+  }
+
+  /* ---------- H2 ---------- */
+
+  .text-h2 {
+    font-family: var(--font-franie);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 134%;
+    letter-spacing: 0;
+  }
+
+  /* ---------- H3 ---------- */
+
+  .text-h3 {
+    font-family: var(--font-franie);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 134%;
+    letter-spacing: 0.0234em;
+  }
+
+  /* ---------- H4 ---------- */
+
+  .text-h4 {
+    font-family: var(--font-franie);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 134%;
+    letter-spacing: 0.0234em;
+  }
+
+  /* ---------- Body ---------- */
+
+  .text-body {
+    font-family: var(--font-mulish);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 134%;
+    letter-spacing: 0.0344em;
+  }
+
+  /* ---------- Button ---------- */
+
+  .text-button {
+    font-family: var(--font-franie);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0%;
+    letter-spacing: 0.0346em;
+  }
+
+
+  /* ========================================
+     Laptop
+     >= 768px
+  ======================================== */
+
+  @media (min-width: 768px) {
+
+    .text-h1 {
+      font-size: 48px;
+    }
+
+    .text-h2 {
+      font-size: 36px;
+    }
+
+    .text-h3 {
+      font-size: 24px;
+    }
+
+    .text-h4 {
+      font-size: 18px;
+    }
+
+    .text-body {
+      font-size: 14px;
+    }
+
+  }
+
+
+  /* ========================================
+     Desktop
+     >= 1440px
+  ======================================== */
+
+  @media (min-width: 1440px) {
+
+    .text-h1 {
+      font-size: 64px;
+    }
+
+    .text-h2 {
+      font-size: 48px;
+    }
+
+    .text-h3 {
+      font-size: 36px;
+      letter-spacing: 0.0264em;
+    }
+
+    .text-h4 {
+      font-size: 24px;
+      letter-spacing: 0.0264em;
+    }
+
+    .text-body {
+      font-size: 16px;
+      line-height: 143%;
+      letter-spacing: 0.032em;
+    }
+
+
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -133,7 +311,7 @@
   }
 
   ::selection {
-    background: oklch(0.8606 0.1731 91.94);
+    background: oklch(89.6% 0.184 109.9);
     color: oklch(0.205 0 0);
   }
 
