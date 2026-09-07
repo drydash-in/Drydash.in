@@ -135,7 +135,7 @@ export const testimonialsRow2: Testimonial[] = [
 ];
 
 export const TestimonialCard = ({ data }: { data: Testimonial }) => (
-    <div className="w-[380px] 2xl:w-[420px] bg-[#141414]/80 border border-white/5 rounded-2xl p-8 flex flex-col gap-6 shrink-0 snap-start">
+    <div className="w-[380px] 2xl:w-[420px] squircle-sm border border-black/15 p-8 flex flex-col gap-6 shrink-0 snap-start">
         {/* Top row: Quotes & Rating */}
         <div className="hidden md:flex justify-between items-start">
             <Quotes size={32} weight="fill" className="text-gray-600/50" />
@@ -146,29 +146,29 @@ export const TestimonialCard = ({ data }: { data: Testimonial }) => (
                         <Star key={i} size={16} weight="fill" />
                     ))}
                 </div>
-                <div className="bg-white/10 px-2 py-0.5 rounded text-[11px] font-bold text-white/80">
+                <div className="bg-black/10 px-2 py-0.5 rounded text-[11px] font-bold text-black/80">
                     {data.rating.toFixed(1)}
                 </div>
             </div>
         </div>
 
         {/* Testimonial Text */}
-        <p className="text-white/80 text-[15px] 2xl:text-[16px] leading-[1.7] tracking-wide mb-4 line-clamp-4">
+        <p className="text-body mb-2 line-clamp-4">
             {data.message}
         </p>
 
         {/* User Profile */}
         <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center overflow-hidden shrink-0">
+                <div className="w-10 h-10 rounded-full bg-black/10 flex items-center justify-center overflow-hidden shrink-0">
                     {data.profilePic ? (
                         <img src={data.profilePic} alt={data.name} className="w-full h-full object-cover" />
                     ) : (
-                        <User size={20} weight="fill" className="text-white/50" />
+                        <User size={20} weight="fill" className="text-black/50" />
                     )}
                 </div>
                 <div className="flex flex-col">
-                    <h4 className="text-white/90 font-medium text-[14px]">{data.name}</h4>
+                    <h4 className="text-black/90 font-medium text-[14px]">{data.name}</h4>
                     <p className="text-gray-500 text-[12px]">{data.role}</p>
                 </div>
             </div>
@@ -180,26 +180,22 @@ export const TestimonialCard = ({ data }: { data: Testimonial }) => (
 const Testimonials = () => {
 
     return (
-        <section className="w-full py-20 lg:py-32 bg-[#0A0A0A] overflow-hidden">
+        <section className="w-full py-20 lg:py-32 overflow-hidden">
             <Container>
                 {/* Header text */}
                 <div className="flex flex-col md:items-center md:justify-center justify-start md:text-center text-left mb-16 px-4">
-                    <h2 className="text-lg tracking-wide mb-6 text-gray-400 md:hidden block">/ Our trusted user</h2>
-                    <h2 className="text-4xl 2xl:text-5xl font-black text-[#E2DEC6] mb-5 tracking-tight md:block hidden">
+                    <h2 className="text-lg tracking-wide mb-6 text-h3 md:hidden block">/ Our trusted user</h2>
+                    <h3 className="text-4xl 2xl:text-5xl text-h3 mb-5 tracking-tight md:block hidden">
                         Our Trusted User
-                    </h2>
-                    <p className="text-[15px] 2xl:text-[16px] leading-relaxed text-[#8a928e] max-w-2xl mx-auto tracking-wide md:block hidden">
-                        Trusted by customers for quality and convenience. we deliver reliable
-                        service, careful handling, and fresh results—on time, every time.
+                    </h3>
+                    <p className="text-[15px] 2xl:text-[16px] leading-relaxed text-body max-w-2xl mx-auto tracking-wide md:block hidden">
+                        Trusted by many individuals like you.
                     </p>
                 </div>
             </Container>
 
             {/* Infinite scrolling rows container */}
             <div className="w-full flex flex-col gap-6 lg:gap-8 overflow-hidden relative">
-                {/* Left/Right Fades */}
-                <div className="absolute left-0 top-0 bottom-0 w-20 2xl:w-40 bg-linear-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-10 pointer-events-none"></div>
-                <div className="absolute right-0 top-0 bottom-0 w-20 2xl:w-40 bg-linear-to-l from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent z-10 pointer-events-none"></div>
 
                 {/* Row 1 - Moving Right */}
                 <InfiniteSlider reverse speed={50} gap={24}>

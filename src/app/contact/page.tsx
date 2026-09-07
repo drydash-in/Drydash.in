@@ -3,17 +3,14 @@ import React from 'react';
 import Container from '@/components/common/container';
 import { motion } from 'motion/react';
 import { InView } from '@/components/ui/in-view';
-import { CheckCircleIcon, CaretDownIcon } from '@phosphor-icons/react';
+import { CheckCircleIcon } from '@phosphor-icons/react';
 
 const ContactPage = () => {
     return (
-        <main className="min-h-screen text-white md:pt-24 pt-10 pb-20">
+        <main className="min-h-screen text-foreground pb-20 mt-10">
             <Container>
-                <section className="bg-[url('/Assests/Images/background_gradiant.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-[700px] py-16 lg:py-24 border-6 border-[#E2DEC6]/20 md:p-6 p-4 rounded-[40px] flex flex-col justify-center items-center relative overflow-hidden">
+                <section className=" w-full min-h-[640px] py-12 sm:py-16 lg:py-20 p-6 sm:p-10 lg:p-14 squircle-lg flex flex-col justify-center items-center relative overflow-hidden">
 
-                    {/* Decorative Glowing Blobs (Optional, to mimic the image's vibrant lighting) */}
-                    <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#03D391]/10 rounded-full blur-[120px] pointer-events-none" />
-                    <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-orange-500/10 rounded-full blur-[100px] pointer-events-none" />
 
                     <InView
                         viewOptions={{ once: true, margin: '0px 0px -150px 0px' }}
@@ -27,7 +24,7 @@ const ContactPage = () => {
                             },
                         }}
                     >
-                        <div className="w-full max-w-[1300px] mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-stretch gap-16 lg:gap-12 relative z-10">
+                        <div className="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-between items-center lg:items-stretch gap-12 lg:gap-14 relative z-10">
 
                             {/* ── LEFT SIDE: BRAND CONTENT ── */}
                             <motion.div
@@ -35,14 +32,14 @@ const ContactPage = () => {
                                     hidden: { opacity: 0, x: -30 },
                                     visible: { opacity: 1, x: 0, transition: { duration: 0.3 } }
                                 }}
-                                className="w-full lg:w-[45%] flex flex-col pt-4 lg:pt-10"
+                                className="w-full lg:w-[48%] flex flex-col pt-2 lg:pt-4"
                             >
                                 <div className="space-y-6">
-                                    <h1 className="text-4xl md:text-6xl 2xl:text-7xl font-black uppercase text-white">
+                                    <h1 className="text-h1 text-foreground uppercase tracking-tight">
                                         Let’s Talk
                                     </h1>
                                     {/* Feature Checklist */}
-                                    <ul className="space-y-4 pt-8">
+                                    <ul className="space-y-4 pt-4 sm:pt-6">
                                         {[
                                             "24-Hour Delivery Promise",
                                             "Eco-Friendly Solvents",
@@ -50,8 +47,8 @@ const ContactPage = () => {
                                             "Premium Fabric Care"
                                         ].map((feature, idx) => (
                                             <li key={idx} className="flex items-center gap-3">
-                                                <CheckCircleIcon weight="fill" size={24} className="text-[#FACC15]" />
-                                                <span className="text-sm md:text-md font-bold tracking-wide text-white/90">
+                                                <CheckCircleIcon weight="fill" size={22} className="text-primary shrink-0" />
+                                                <span className="text-body font-semibold tracking-wide text-foreground">
                                                     {feature}
                                                 </span>
                                             </li>
@@ -60,8 +57,8 @@ const ContactPage = () => {
                                 </div>
 
                                 {/* Bottom Branding Text */}
-                                <div className="mt-10 lg:mt-auto">
-                                    <p className="text-[13px] md:text-[14px] leading-relaxed text-[#8a928e] max-w-sm">
+                                <div className="mt-10 lg:mt-auto pt-6">
+                                    <p className="text-body leading-relaxed text-foreground/70 max-w-sm">
                                         Get in touch and we’ll handle the rest. <br />
                                         Quick booking, fast service, and fresh results—right when you need them
                                     </p>
@@ -74,26 +71,26 @@ const ContactPage = () => {
                                     hidden: { opacity: 0, scale: 0.95 },
                                     visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: 'easeOut' } }
                                 }}
-                                className="w-full lg:w-[48%] xl:w-[45%]"
+                                className="w-full lg:w-[48%] xl:w-[46%]"
                             >
-                                <div className="bg-[#111111]/80 backdrop-blur-2xl border border-white/5 p-8 md:p-10 rounded-[32px] shadow-2xl flex flex-col justify-center min-h-[300px]">
-                                    <header className="mb-10">
-                                        <p className="text-[14px] text-[#8a928e] leading-relaxed">
+                                <div className="bg-white border border-black/10 p-7 sm:p-10 md:p-12 squircle-md flex flex-col justify-center min-h-[320px]">
+                                    <header className="mb-8">
+                                        <p className="text-body text-foreground/60 leading-relaxed">
                                             Reach out to us directly for any inquiries or support. We are here to help!
                                         </p>
                                     </header>
 
-                                    <div className="space-y-10">
-                                        <div className="space-y-2">
-                                            <label className="text-[12px] font-bold text-[#8a928e] uppercase tracking-wider pl-1">Email</label>
-                                            <a href="mailto:support@drydash.in" className="block text-xl md:text-2xl lg:text-3xl font-bold text-white hover:text-[#03D391] transition-colors">
+                                    <div className="space-y-5">
+                                        <div className="space-y-1.5 p-4 sm:p-5 squircle-sm bg-[#F6F7F9] border border-black/5 transition-colors hover:bg-[#EDF2EE] group">
+                                            <label className="text-[11px] font-bold text-foreground/50 uppercase tracking-wider pl-1">Email</label>
+                                            <a href="mailto:support@drydash.in" className="block text-h3 md:text-h2 font-bold text-foreground group-hover:text-primary transition-colors">
                                                 support@drydash.in
                                             </a>
                                         </div>
 
-                                        <div className="space-y-2">
-                                            <label className="text-[12px] font-bold text-[#8a928e] uppercase tracking-wider pl-1">Phone</label>
-                                            <a href="tel:+918287636979" className="block text-xl md:text-2xl lg:text-3xl font-bold text-white hover:text-[#03D391] transition-colors">
+                                        <div className="space-y-1.5 p-4 sm:p-5 squircle-sm bg-[#F6F7F9] border border-black/5 transition-colors hover:bg-[#EDF2EE] group">
+                                            <label className="text-[11px] font-bold text-foreground/50 uppercase tracking-wider pl-1">Phone</label>
+                                            <a href="tel:+918287636979" className="block text-h3 md:text-h2 font-bold text-foreground group-hover:text-primary transition-colors">
                                                 +91 8287636979
                                             </a>
                                         </div>

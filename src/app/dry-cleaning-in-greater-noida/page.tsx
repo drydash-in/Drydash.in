@@ -8,16 +8,11 @@ import { InView } from '@/components/ui/in-view';
 import gsap from 'gsap';
 import SplitText from 'gsap/SplitText';
 import {
-    WhatsappLogo,
     CheckCircle,
     Truck,
     Clock,
     Leaf,
-    Star,
-    Quotes,
     User,
-    ArrowUpRight,
-    CaretRight
 } from 'phosphor-react';
 import { InfiniteSlider } from '@/components/motion-primitives/infinite-slider';
 import DownloadBtn from '@/components/DownloadBtn/downloadBtn';
@@ -25,11 +20,6 @@ import { testimonialsRow2, TestimonialCard } from '@/components/landing/testimon
 
 // Data
 const servicesList = [
-    // {
-    //     title: "apparel",
-    //     desc: "Expert garment care using eco-conscious solvents and artisanal finishing techniques.",
-    //     icon: Leaf
-    // },
     {
         title: "Dry Cleaning",
         desc: "Delicate treatment for high-fashion pieces, ensuring longevity and pristine texture.",
@@ -64,8 +54,6 @@ const stats = [
     { label: "Same-Day & 8-Hour", icon: Clock },
     { label: "Eco-Friendly Processes", icon: Leaf }
 ];
-
-
 
 const DryCleaningPage = () => {
     const heroTitleRef = useRef<HTMLHeadingElement>(null);
@@ -124,53 +112,50 @@ const DryCleaningPage = () => {
     }, []);
 
     return (
-        <main className="bg-[#0A0A0A] text-white overflow-hidden">
+        <main className="text-foreground overflow-hidden">
             {/* ── HERO SECTION ── */}
-            <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-32 pb-20 bg-[url('/Assests/Images/background_gradiant.jpg')] bg-cover bg-center">
+            <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-28 sm:pt-32 pb-16 sm:pb-20">
                 <Container>
                     <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
                         {/* Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="bg-[#03D391]/10 border border-[#03D391]/20 px-4 py-1.5 rounded-full mb-8"
+                            className="bg-primary/10 border border-primary/20 px-4 py-1.5 squircle mb-6 sm:mb-8"
                         >
-                            <span className="text-[#03D391] text-[13px] font-bold tracking-widest uppercase">Servicing All Greater Noida Areas</span>
+                            <span className="text-primary text-[13px] font-bold tracking-widest uppercase">Servicing All Greater Noida Areas</span>
                         </motion.div>
 
                         {/* Title */}
                         <h1
                             ref={heroTitleRef}
-                            className="text-4xl md:text-6xl 2xl:text-[90px] font-normal leading-[1.1] mb-8 tracking-tight"
+                            className="text-h1 text-foreground mb-4 sm:mb-6"
                         >
                             Premium Cleaning Services<br />
-                            <span className="text-[#03D391] italic">Across Greater Noida</span>
+                            <span className="text-primary">Across Greater Noida</span>
                         </h1>
 
                         {/* Subtitle */}
                         <p
                             ref={heroSubtitleRef}
-                            className="text-[#8a928e] text-[16px] md:text-[18px] 2xl:text-[20px] max-w-2xl mb-12 leading-relaxed tracking-wide"
+                            className="text-body text-foreground/70 max-w-xl mx-auto mb-8 sm:mb-10"
                         >
                             overnight garment and shoe care
                         </p>
 
                         {/* Buttons */}
-                        <div ref={heroButtonsRef} className="flex flex-col sm:flex-row gap-5 mb-16 w-full sm:w-auto px-6">
+                        <div ref={heroButtonsRef} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 sm:mb-16 w-full sm:w-auto px-6">
                             <DownloadBtn />
-                            {/* <button className="bg-white/20 hover:bg-white/30 border border-white/20 text-white px-10 rounded-xl font-bold transition-all backdrop-blur-xl">
-                                <span>Check Pricing</span>
-                            </button> */}
                         </div>
 
                         {/* Quick Stats */}
-                        <div ref={heroStatsRef} className="hidden md:grid md:grid-cols-3 gap-8 md:gap-12 mt-10">
+                        <div ref={heroStatsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 mt-4 sm:mt-6 w-full max-w-3xl text-left">
                             {stats.map((stat, i) => (
-                                <div key={i} className="flex flex-col items-center gap-3">
-                                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/5">
-                                        <stat.icon size={22} className="text-[#03D391]" />
+                                <div key={i} className="flex items-center gap-3.5 p-3.5 sm:p-4 squircle-sm border border-black/10 bg-background hover:border-primary/40 transition-colors">
+                                    <div className="w-10 h-10 squircle rounded-xl bg-primary/15 text-primary flex items-center justify-center shrink-0">
+                                        <stat.icon size={22} weight="regular" />
                                     </div>
-                                    <span className="text-white/70 text-[14px] font-medium tracking-wide">{stat.label}</span>
+                                    <span className="text-body text-foreground font-medium tracking-wide">{stat.label}</span>
                                 </div>
                             ))}
                         </div>
@@ -179,46 +164,44 @@ const DryCleaningPage = () => {
             </section>
 
             {/* ── SERVICES SECTION ── */}
-            <section className="py-24 2xl:py-32">
+            <section className="py-16 sm:py-24 md:py-28">
                 <Container>
-                    <div className="mb-20">
+                    <div className="mb-12 sm:mb-16">
                         <InView
                             viewOptions={{ once: true, margin: "0px 0px -100px 0px" }}
                             variants={{
-                                hidden: { opacity: 0, y: 40 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+                                hidden: { opacity: 0, y: 30 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
                             }}
                         >
-                            <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-normal text-[#E2DEC6] mb-6 tracking-tight">
+                            <h2 className="text-h3 text-foreground mb-2 sm:mb-3">
                                 Expert Care for Every Fabric
                             </h2>
-                            <p className="text-[#8a928e] text-[16px] 2xl:text-[18px] max-w-xl">
+                            <p className="text-body text-foreground/60 max-w-xl">
                                 Meticulous cleaning techniques powered by modern logistics.
                             </p>
                         </InView>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
                         {servicesList.map((svc, i) => (
                             <InView
                                 key={i}
                                 viewOptions={{ once: true }}
                                 variants={{
-                                    hidden: { opacity: 0, scale: 0.95 },
-                                    visible: { opacity: 1, scale: 1, transition: { delay: i * 0.1, duration: 0.5 } }
+                                    hidden: { opacity: 0, y: 25 },
+                                    visible: { opacity: 1, y: 0, transition: { delay: i * 0.1, duration: 0.5 } }
                                 }}
+                                className="h-full"
                             >
-                                <div className="group bg-[#141414]/50 border border-white/5 rounded-3xl p-8 h-full flex flex-col hover:bg-[#1A1A1A] hover:border-[#03D391]/30 transition-all duration-500 cursor-pointer">
-                                    <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-[#03D391]/10 group-hover:border-[#03D391]/20 transition-colors">
-                                        <svc.icon size={28} className="text-gray-400 group-hover:text-[#03D391] transition-colors" />
+                                <div className="group bg-background border border-black/10 squircle-lg p-6 sm:p-8 h-full flex flex-col hover:border-primary/40 hover:shadow-md transition-all duration-300 cursor-default">
+                                    <div className="w-12 h-12 bg-primary/15 text-primary squircle rounded-xl flex items-center justify-center mb-6 transition-colors group-hover:bg-primary group-hover:text-white">
+                                        <svc.icon size={26} weight="regular" />
                                     </div>
-                                    <h3 className="text-[22px] font-medium text-white mb-4">{svc.title}</h3>
-                                    <p className="text-gray-500 text-[14px] 2xl:text-[15px] leading-relaxed mb-8 group-hover:text-gray-400 transition-colors">
+                                    <h3 className="text-h4 text-foreground mb-2 sm:mb-3">{svc.title}</h3>
+                                    <p className="text-body text-foreground/75 leading-relaxed">
                                         {svc.desc}
                                     </p>
-                                    {/* <div className="mt-auto flex items-center gap-2 text-[#03D391] font-bold text-[14px] uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all translate-x-[-10px] group-hover:translate-x-0">
-                                        Book Service <CaretRight size={18} />
-                                    </div> */}
                                 </div>
                             </InView>
                         ))}
@@ -227,35 +210,35 @@ const DryCleaningPage = () => {
             </section>
 
             {/* ── DIGITAL CURATOR SECTION ── */}
-            <section className="py-24 2xl:py-32 bg-[#0C0C0C]">
+            <section className="py-16 sm:py-24 md:py-28 bg-[#F6F7F9] border-y border-black/5">
                 <Container>
-                    <div className="flex flex-col lg:flex-row items-center gap-20">
+                    <div className="flex flex-col lg:flex-row items-center gap-12 sm:gap-16 lg:gap-20">
                         {/* Left: Text */}
                         <div className="w-full lg:w-1/2">
                             <InView
                                 viewOptions={{ once: true }}
                                 variants={{
-                                    hidden: { opacity: 0, x: -50 },
-                                    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+                                    hidden: { opacity: 0, x: -30 },
+                                    visible: { opacity: 1, x: 0, transition: { duration: 0.6 } }
                                 }}
                             >
-                                <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-normal leading-tight text-[#E2DEC6] mb-8 tracking-tight">
+                                <h2 className="text-h3 text-foreground mb-4 sm:mb-6 leading-tight">
                                     The Digital Curator Approach to Cleanliness.
                                 </h2>
-                                <p className="text-[#8a928e] text-[16px] 2xl:text-[18px] leading-relaxed mb-12 max-w-xl">
+                                <p className="text-body text-foreground/75 leading-relaxed mb-8 sm:mb-10 max-w-xl">
                                     We treat every garment as a curated piece of art, ensuring the highest standards of hygiene and fabric integrity.
                                 </p>
 
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                                     {curatorPoints.map((point, i) => (
-                                        <div key={i} className="flex flex-col gap-3">
+                                        <div key={i} className="p-4 sm:p-5 squircle-sm bg-background border border-black/5 flex flex-col gap-2.5 hover:border-primary/40 transition-colors">
                                             <div className="flex items-center gap-3">
-                                                <div className="w-6 h-6 rounded-lg bg-[#03D391]/10 flex items-center justify-center border border-[#03D391]/20">
-                                                    <CheckCircle size={14} className="text-[#03D391]" />
+                                                <div className="w-7 h-7 squircle rounded-lg bg-primary/15 flex items-center justify-center shrink-0">
+                                                    <CheckCircle size={16} weight="bold" className="text-primary" />
                                                 </div>
-                                                <h4 className="text-white font-bold text-[16px]">{point.title}</h4>
+                                                <h4 className="text-h4 text-foreground font-semibold">{point.title}</h4>
                                             </div>
-                                            <p className="text-gray-500 text-[14px] leading-relaxed pl-9">
+                                            <p className="text-body text-foreground/70 leading-relaxed">
                                                 {point.desc}
                                             </p>
                                         </div>
@@ -269,19 +252,18 @@ const DryCleaningPage = () => {
                             <InView
                                 viewOptions={{ once: true }}
                                 variants={{
-                                    hidden: { opacity: 0, scale: 0.9, rotate: 2 },
-                                    visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1, ease: "circOut" } }
+                                    hidden: { opacity: 0, scale: 0.95 },
+                                    visible: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
                                 }}
                             >
-                                <div className="relative rounded-[2.5rem] overflow-hidden group shadow-2xl">
+                                <div className="relative squircle-lg overflow-hidden group shadow-xl border border-black/10">
                                     <Image
                                         src="/Assests/Images/curator_section.png"
                                         alt="Modern apparel"
                                         width={1200}
                                         height={1400}
-                                        className="w-full h-auto object-cover transform transition-transform duration-1000 group-hover:scale-105"
+                                        className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent pointer-events-none" />
                                 </div>
                             </InView>
                         </div>
@@ -290,20 +272,20 @@ const DryCleaningPage = () => {
             </section>
 
             {/* ── TESTIMONIALS SECTION ── */}
-            <section className="py-24 2xl:py-40 bg-[#0A0A0A] overflow-hidden relative">
+            <section className="py-16 sm:py-24 md:py-32 bg-background overflow-hidden relative">
                 <Container>
-                    <div className="text-center mb-20 px-4">
+                    <div className="text-center mb-12 sm:mb-16 px-4">
                         <InView
                             viewOptions={{ once: true }}
                             variants={{
                                 hidden: { opacity: 0, y: 20 },
-                                visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
                             }}
                         >
-                            <h2 className="text-3xl md:text-5xl 2xl:text-6xl font-normal text-[#E2DEC6] mb-6 tracking-tight">
+                            <h2 className="text-h3 text-foreground mb-3 sm:mb-4 tracking-tight">
                                 Loved by Greater Noida Discerning
                             </h2>
-                            <p className="text-[#8a928e] text-[16px] 2xl:text-[18px] max-w-2xl mx-auto">
+                            <p className="text-body text-foreground/60 max-w-2xl mx-auto">
                                 Hear from our clients across Greater Noida.
                             </p>
                         </InView>
@@ -311,8 +293,8 @@ const DryCleaningPage = () => {
                 </Container>
 
                 <div className="w-full flex flex-col gap-8 relative">
-                    <div className="absolute left-0 top-0 bottom-0 w-20 2xl:w-40 bg-linear-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
-                    <div className="absolute right-0 top-0 bottom-0 w-20 2xl:w-40 bg-linear-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
+                    <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 md:w-40 bg-linear-to-r from-background to-transparent z-10 pointer-events-none"></div>
+                    <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 md:w-40 bg-linear-to-l from-background to-transparent z-10 pointer-events-none"></div>
 
                     <InfiniteSlider speed={50} gap={24}>
                         {testimonialsRow2.map((testimonial) => (
@@ -323,12 +305,12 @@ const DryCleaningPage = () => {
             </section>
 
             {/* ── FINAL CTA SECTION ── */}
-            <section className="py-24 2xl:py-32">
+            <section className="py-16 sm:py-24 md:py-32">
                 <Container>
-                    <div className="bg-[#03D391] rounded-[3rem] p-12 md:p-24 flex flex-col items-center text-center overflow-hidden relative">
+                    <div className="bg-primary squircle-lg p-8 sm:p-14 md:p-20 flex flex-col items-center text-center overflow-hidden relative shadow-xl text-background">
                         {/* Decorative background circle */}
-                        <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[80%] bg-black/5 rounded-full blur-3xl pointer-events-none" />
-                        <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[80%] bg-white/10 rounded-full blur-3xl pointer-events-none" />
+                        <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[80%] bg-white/10 rounded-full blur-3xl pointer-events-none" />
+                        <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[80%] bg-black/10 rounded-full blur-3xl pointer-events-none" />
 
                         {/* Side Illustrations */}
                         <div className="hidden md:block absolute bottom-0 left-0 md:w-[280px] lg:w-[380px] xl:w-[450px] 2xl:w-[600px] pointer-events-none transform -scale-x-100 z-10 origin-bottom">
@@ -342,13 +324,13 @@ const DryCleaningPage = () => {
                             viewOptions={{ once: true }}
                             variants={{
                                 hidden: { opacity: 0, scale: 0.95 },
-                                visible: { opacity: 1, scale: 1, transition: { duration: 0.8 } }
+                                visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
                             }}
                         >
-                            <h2 className="text-4xl md:text-5xl font-black text-black mb-8 tracking-tight max-w-3xl leading-[1.05] relative z-20">
+                            <h2 className="text-h2 text-background mb-4 sm:mb-6 tracking-tight max-w-3xl leading-tight relative z-20">
                                 Experience Effortless Cleaning Today
                             </h2>
-                            <p className="text-black/70 text-[16px] md:text-[18px] mb-12 2xl:max-w-xl max-w-md text-center mx-auto font-medium relative z-20">
+                            <p className="text-body text-background/90 mb-8 sm:mb-10 max-w-xl text-center mx-auto relative z-20 leading-relaxed">
                                 Schedule your pickup in minutes. Let us handle the cleaning while you focus on what matters.
                             </p>
                             <div className="relative z-20">

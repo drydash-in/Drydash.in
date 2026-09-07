@@ -124,6 +124,47 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+@utility squircle {
+  border-radius: 24px;
+  corner-shape: squircle;
+}
+
+@utility squircle-sm {
+  border-radius: 36px;
+  corner-shape: squircle;
+}
+
+@utility squircle-md {
+  border-radius: 48px;
+  corner-shape: squircle;
+}
+
+@utility squircle-lg {
+  border-radius: 64px;
+  corner-shape: squircle;
+}
+
+.squircle {
+  border-radius: 24px;
+  corner-shape: squircle;
+}
+
+.squircle-sm {
+  border-radius: 36px;
+  corner-shape: squircle;
+}
+
+.squircle-md {
+  border-radius: 48px;
+  corner-shape: squircle;
+}
+
+.squircle-lg {
+  border-radius: 64px;
+  corner-shape: squircle;
+}
+
 /* ========================================
    DryDash Typography System
 ======================================== */
@@ -252,6 +293,7 @@
       letter-spacing: 0.032em;
     }
 
+
   }
 }
 
@@ -269,7 +311,7 @@
   }
 
   ::selection {
-    background: oklch(0.8606 0.1731 91.94);
+    background: oklch(89.6% 0.184 109.9);
     color: oklch(0.205 0 0);
   }
 
