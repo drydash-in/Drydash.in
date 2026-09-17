@@ -19,7 +19,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="text-body w-full max-w-[360px] xl:w-[60%]">
-                        Get your shoes and apparels restored the same day, free pick up and delivery and ₹0 hidden charges.
+                        Get your shoes and apparel restored the same day, with free pickup, delivery, and zero hidden charges
                     </p>
 
                     <div className="flex items-center gap-3 sm:gap-4">

@@ -186,7 +186,7 @@ const Testimonials = () => {
                 <div className="flex flex-col md:items-center md:justify-center justify-start md:text-center text-left mb-16 px-4">
                     <h2 className="text-lg tracking-wide mb-6 text-h3 md:hidden block">/ Our trusted user</h2>
                     <h3 className="text-4xl 2xl:text-5xl text-h3 mb-5 tracking-tight md:block hidden">
-                        Our Trusted User
+                        Our Trusted Users
                     </h3>
                     <p className="text-[15px] 2xl:text-[16px] leading-relaxed text-body max-w-2xl mx-auto tracking-wide md:block hidden">
                         Trusted by many individuals like you.

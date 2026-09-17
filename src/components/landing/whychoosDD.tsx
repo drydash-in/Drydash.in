@@ -6,19 +6,19 @@ import Container from '@/components/common/container';
 const features = [
     {
         highlight: "₹0 hidden",
-        label: "fees",
+        label: "Fees",
     },
     {
         highlight: "Free",
-        label: "pickup & Delivery",
+        label: "Pickup & Delivery",
     },
     {
         highlight: "Same day",
-        label: "dry cleaning",
+        label: "Dry Cleaning",
     },
     {
-        highlight: "Door step",
-        label: "billing",
+        highlight: "Doorstep",
+        label: "Billing",
     },
 ];
 
