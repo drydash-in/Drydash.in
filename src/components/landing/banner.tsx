@@ -17,7 +17,7 @@ const Banner = () => {
                             Get 25% discount on your first pickup
                         </h2>
                         <p className="text-body text-background/90 xl:w-1/2">
-                            Our service starts at just ₹99, experience the premium hassle free dry cleaning.
+                            Our service starts at just ₹99, experience the premium, hassle-free dry cleaning.
                         </p>
                     </div>
                     {/* Badge SVG Icon */}

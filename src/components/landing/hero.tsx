@@ -8,18 +8,18 @@ import Link from "next/link";
 const Hero = () => {
     return (
         <Container>
-            <div className="relative min-h-[calc(100dvh-136px)] px-4 pt-20 sm:px-6 sm:pt-24 xl:flex xl:h-screen xl:min-h-0 xl:items-center xl:justify-between xl:px-4 xl:pt-0">
+            <div className="relative min-h-[calc(100dvh-136px)] px-4 pt-20 sm:px-6 sm:pt-24 lg:flex lg:h-screen lg:min-h-0 lg:items-center lg:justify-between lg:px-4 lg:pt-0">
 
                 {/* Content */}
-                <div className="relative z-0 flex w-full flex-col gap-y-5 sm:gap-y-6 xl:w-1/2 xl:pt-[0%] pt-[10%]">
+                <div className="relative z-0 flex w-full flex-col gap-y-5 sm:gap-y-6 pt-[10%] lg:w-1/2 lg:pt-0">
                     <h1 className="text-h1">
                         Same-Day
                         <br />
                         Dry Cleaning
                     </h1>
 
-                    <p className="text-body w-full max-w-[360px] xl:w-[60%]">
-                        Get your shoes and apparels restored the same day, free pick up and delivery and ₹0 hidden charges.
+                    <p className="text-body w-full max-w-[360px] lg:w-[80%] xl:w-[60%]">
+                        Get your shoes and apparel restored the same day, with free pickup, delivery, and zero hidden charges
                     </p>
 
                     <div className="flex items-center gap-3 sm:gap-4">
@@ -37,12 +37,12 @@ const Hero = () => {
                 </div>
 
                 {/* Character */}
-                <div className="">
+                <div className="mt-8 flex w-full items-center justify-center lg:mt-0 lg:w-1/2">
                     <Image
                         src={Hero_character}
                         alt="DryDash cleaning professional"
                         priority
-                        className=""
+                        className="max-h-[70vh] w-auto object-contain"
                     />
                 </div>
             </div>

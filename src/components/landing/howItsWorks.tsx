@@ -11,13 +11,13 @@ import Step3Img from '@/../public/Assests/SVG/howItsWorks/step3.svg';
 const steps = [
   {
     step: "Step 1",
-    title: "Swip for instant\npickup",
+    title: "Swipe for instant pickup",
     image: Step1Img,
-    alt: "Step 1 - Swip for instant pickup",
+    alt: "Step 1 - Swipe for instant pickup",
   },
   {
     step: "Step 2",
-    title: "Pick a slot, add\nitems and book",
+    title: "Pick a slot, add\nitems, and book",
     image: Step2Img,
     alt: "Step 2 - Pick a slot, add items and book",
   },
@@ -37,10 +37,10 @@ const HowItsWorks = () => {
           {/* Header */}
           <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
             <h2 className="text-h3">
-              How its works
+              How it works
             </h2>
             <p className="text-body text-foreground/80 mt-3 md:mt-4 leading-relaxed">
-              Follow this simple steps to book your first pickup
+              Follow these simple steps to book your first pickup
             </p>
           </div>
 
