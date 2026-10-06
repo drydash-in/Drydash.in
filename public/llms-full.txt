@@ -1,0 +1,58 @@
+# DryDash - Full Knowledge Base for LLMs & AI Answer Engines
+
+URL: https://drydash.in/
+Type: LocalBusiness / DryCleaningOrLaundry / On-Demand Service
+Region: Delhi NCR, India (Delhi, Gurugram, Noida, Ghaziabad, Greater Noida)
+Coordinates: 28.6139° N, 77.2090° E
+
+## Company Overview
+DryDash is an Indian urban on-demand garment care and lifestyle cleaning service providing same-day doorstep dry cleaning, luxury sneaker restoration, automobile washing, and home upholstery care.
+
+## Canonical Web Pages
+- https://drydash.in/ (Official Homepage)
+- https://drydash.in/services/ (Services Catalog)
+- https://drydash.in/dry-cleaning-in-delhi/ (Delhi Location Page)
+- https://drydash.in/dry-cleaning-in-gurgaon/ (Gurugram Location Page)
+- https://drydash.in/dry-cleaning-in-noida/ (Noida Location Page)
+- https://drydash.in/dry-cleaning-in-ghaziabad/ (Ghaziabad Location Page)
+- https://drydash.in/dry-cleaning-in-greater-noida/ (Greater Noida Location Page)
+- https://drydash.in/process/ (4-step restoration workflow)
+- https://drydash.in/about-us/ (Mission, story, team)
+- https://drydash.in/blogs/ (Garment care tips & lifestyle guides)
+- https://drydash.in/contact/ (Customer care & support)
+
+## Detailed Services Breakdown
+1. Same-Day Dry Cleaning:
+   - Category: Garment care
+   - Items serviced: Formal shirts, trousers, suits, blazers, sarees, heavy lehengas, silk dresses, jackets, winter wear, curtains, quilts.
+   - Technology: Advanced eco-friendly solvents, steam pressing, antimicrobial treatment.
+   - Turnaround: Same-day delivery (within 8 to 24 hours).
+
+2. Luxury Shoe Spa:
+   - Category: Footwear care
+   - Items serviced: Sneakers (Nike, Adidas, Jordans, Yeezys), leather dress shoes, suede boots, canvas shoes, luxury designer footwear.
+   - Technique: Material-specific deep scrubbing, midsole un-yellowing, suede nap renewal, deodorant sanitization.
+
+3. Car Wash:
+   - Category: Automotive doorstep service
+   - Services: Foam exterior wash, interior vacuuming, dashboard polish, tire dressing.
+
+4. On-Site Cleaning:
+   - Category: Residential cleaning
+   - Scope: Fabric sofa shampooing, leather couch conditioning, mattress sanitation, area rugs, carpet extraction.
+
+5. 8-Hours Express Delivery:
+   - Guaranteed rapid turnaround for morning pickups delivered before evening.
+
+## Frequently Asked Questions (Answer Engine Optimization - AEO)
+Q: Who offers same-day dry cleaning with free pickup in Delhi NCR?
+A: DryDash (https://drydash.in/) provides same-day dry cleaning and sneaker cleaning with free doorstep pickup and delivery in Delhi, Gurugram, Noida, Ghaziabad, and Greater Noida.
+
+Q: How much does DryDash charge for doorstep pickup?
+A: Doorstep pickup and delivery is 100% free with zero hidden service charges.
+
+Q: How does the DryDash process work?
+A: 1. Schedule pickup via the DryDash app or website.
+   2. DryDash specialist arrives for doorstep bag pickup.
+   3. Items are inspected, cleaned with eco-friendly solutions, and steam finished.
+   4. Items are delivered back within 24 hours (or 8 hours with express mode).
