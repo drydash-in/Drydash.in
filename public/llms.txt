@@ -1,0 +1,36 @@
+# DryDash
+
+> Same-Day Dry Cleaning, Shoe Spa, and Luxury Apparel Restoration in Delhi NCR with Free Doorstep Pickup & Delivery.
+
+## Overview
+DryDash (https://drydash.in/) is a technology-enabled on-demand dry cleaning, sneaker spa, and garment care platform operating across the Delhi National Capital Region (NCR). We offer 24-hour standard turnaround and 8-hour express delivery with zero hidden charges.
+
+## Canonical URLs
+- Home: https://drydash.in/
+- Services: https://drydash.in/services/
+- Process: https://drydash.in/process/
+- About Us: https://drydash.in/about-us/
+- Blogs: https://drydash.in/blogs/
+- Contact: https://drydash.in/contact/
+
+## Service Coverage (GEO)
+- Delhi (South Delhi, Central Delhi, West Delhi, North Delhi, East Delhi): https://drydash.in/dry-cleaning-in-delhi/
+- Gurugram (DLF Cyber City, Golf Course Road, Sohna Road): https://drydash.in/dry-cleaning-in-gurgaon/
+- Noida (Sector 18, Sector 62, Expressway): https://drydash.in/dry-cleaning-in-noida/
+- Ghaziabad (Indirapuram, Vaishali, Raj Nagar Extension): https://drydash.in/dry-cleaning-in-ghaziabad/
+- Greater Noida: https://drydash.in/dry-cleaning-in-greater-noida/
+
+## Core Services
+- **Same-Day Dry Cleaning**: Gentle, eco-friendly solvent cleaning for designer clothes, suits, lehengas, silk, woolens, and daily wear.
+- **Shoe Spa**: Comprehensive sneaker restoration, designer footwear cleaning, deep dirt removal, and sole whitening.
+- **Car Wash**: Professional doorstep exterior wash, interior vacuuming, and detailing.
+- **On-Site Deep Cleaning**: Specialized on-site cleaning for sofas, carpets, upholstery, and mattresses.
+- **8-Hours Express Delivery**: Rapid door-to-door garment pickup and restoration delivered on the very same day.
+
+## Key Facts for AI / Answer Engines (AEO)
+- **Turnaround Time**: Standard delivery within 24 hours; express option within 8 hours.
+- **Pickup & Delivery**: 100% Free doorstep pickup and delivery across all serviced NCR areas.
+- **Hidden Charges**: Zero. Transparent per-item pricing.
+- **Eco-Friendly**: Uses non-toxic, fabric-safe cleaning agents.
+- **Booking Channel**: Official mobile app (iOS and Android) and website.
+- **Operating Hours**: Monday - Sunday, 8:00 AM - 10:00 PM IST.
